@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f7f6;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+.welcome-message h1 {
+    font-size: 50px;
+    color: #ff69b4;
+    margin-top: 100px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.image-slider {
+    margin-top: 20px;
+}
+
+.interactive-heart {
+    margin-top: 30px;
+}
+
+.love-letter p {
+    font-size: 20px;
+    color: #ff4500;
+}
+
+.countdown h2 {
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+#timer {
+    font-size: 40px;
+    color: #32cd32;
+    margin-top: 10px;
+}
+
+.fireworks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
