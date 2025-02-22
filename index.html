@@ -3,40 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Bristy!</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Happy Birthday Surprise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="welcome-message">
-            <h1>Happy Birthday, Bristy!</h1>
-        </div>
-
-        <div class="image-slider">
-            <!-- Profile pictures slideshow here -->
-        </div>
-
-        <div class="interactive-heart">
-            <!-- Interactive heart here -->
-        </div>
-
-        <div class="love-letter">
-            <p>Here's a little love note for you...</p>
-            <p id="love-note"></p>
-        </div>
-
-        <div class="countdown">
-            <h2>Countdown to our next adventure!</h2>
-            <div id="timer"></div>
-        </div>
-
-        <div class="fireworks"></div>
-
-        <audio id="bg-music" loop>
-            <source src="your-music-file.mp3" type="audio/mp3">
-        </audio>
+    <!-- Countdown Timer -->
+    <div id="countdown">
+        <h1>Birthday Countdown</h1>
+        <div id="timer"></div>
     </div>
 
-    <script src="scripts.js"></script>
+    <!-- Happy Birthday Message -->
+    <div id="message">
+        <h2>Happy Birthday, Bristy!</h2>
+    </div>
+
+    <!-- Floating Message -->
+    <div id="floating-message">
+        <p>Have an amazing day, filled with love!</p>
+    </div>
+
+    <!-- Confetti Animation (Canvas) -->
+    <canvas id="confettiCanvas"></canvas>
+
+    <!-- Audio -->
+    <audio id="birthday-audio" loop>
+        <source src="happy-birthday-song.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="confetti.js"></script>
+    <script src="countdown.js"></script>
+    <script src="sound.js"></script>
 </body>
 </html>
